@@ -1,12 +1,14 @@
 import LobbyScreen from "./screens/Lobby";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
+import RoomPage from "./screens/Room";
 
 function App() {
   return (
     <div>
       <Routes>
         <Route path="/" element={<LobbyScreen />} />
+        <Route path="/room/:roomId" element={<RoomPage />} />
       </Routes>
     </div>
   );
